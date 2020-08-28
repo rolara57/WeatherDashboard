@@ -39,8 +39,8 @@ SEARCH_FORM.submit(function (event) {
       var newwind = $("<div>").text(response.wind.speed);
       var newpress = $("<div>").text(response.main.pressure);
       //convert temp from k-F
-       //newtemp = (response.main.temp - 273) * 1.80 + 32 ;
-       //newtemp = Math.trunc (newtemp);
+       newtemp = (response.main.temp - 273) * 1.80 + 32 ;
+       newtemp = Math.trunc (newtemp);
      //inserts specified content
       TERM_DIV.append(newinp);
       TEMP_DIV.append(newtemp);
