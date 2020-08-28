@@ -20,7 +20,7 @@ THEN I am presented with the last searched city forecast.
 How it works:
 In javascript the first section is most of the variables to set the page up
 Next section is the key section where the Openweather website and keys are linked together
-The app section is teh search form function and adds to the input field
+The app section is the search form function and adds to the input field
 the following section separates the zip from city use using the NaN(not a number) function
 the folowing section  is the git and input from openweather
 the temperature is converted from K-F then the decimals are taken out
