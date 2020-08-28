@@ -1,14 +1,14 @@
-//set variables
-var SEARCH_FORM = $("#search")
-var FORM_INPUT = $("#input")
-var WIND_DIV = $("#wind")
-var PRESS_DIV = $("#press")
-var TERM_DIV = $("#term")
-var TEMP_DIV = $("#temp")
-var HUMIDITY_DIV = $("#humidity")
+//set variables/ using const in place of var, const cannot be reassigned/should use caps 
+const SEARCH_FORM = $("#search")
+const FORM_INPUT = $("#input")
+const WIND_DIV = $("#wind")
+const PRESS_DIV = $("#press")
+const TERM_DIV = $("#term")
+const TEMP_DIV = $("#tempF")
+const HUMIDITY_DIV = $("#humidity")
 //key
-var OPEN_WEATHER_API_KEY = "&appid=0c9f4acc9a964c20f33315c812d272e4"
-var OPEN_WEATHER_URL = "https://api.openweathermap.org/data/2.5/"
+const OPEN_WEATHER_API_KEY = "&appid=0c9f4acc9a964c20f33315c812d272e4"
+const OPEN_WEATHER_URL = "https://api.openweathermap.org/data/2.5/"
 
 function OpenWeatherUrl(val){
     return OPEN_WEATHER_URL + val + OPEN_WEATHER_API_KEY
@@ -46,7 +46,8 @@ SEARCH_FORM.submit(function (event) {
       TEMP_DIV.append(newtemp);
       HUMIDITY_DIV.append(newhumidity);
       WIND_DIV.append(newwind);
-      PRESS_DIV.append(newpress);
+     PRESS_DIV.append(newpress);
+    
       
     })
     .catch(function (error) {

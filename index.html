@@ -5,24 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather Dashboard</title>
   </head>
-  <header>Weather Dashboard</header>
   <body>
-    <div style="display: flex; width: 50%;">
-    
-      <div id="term" style="width:40%"><h3>Location</h3></div>
-      <div id="temp" style="width:40%"><h3>TempF</h3></div>
-      <div id="humidity" style="width: 40%"><h3>Hum</h3></div>
-      <div id="wind" style="width: 40%"><h3>wind</h3></div>
-      <div id="press" style="width: 40%"><h3>Pressure</h3></div>
+    <header><h1>Weather Dashboard</h1></header>
+    <div style="display: flex; width: 50%">
+      <div id="term" style="width: 20%"><h3>Location</h3></div>
+      <div id="tempF" style="width: 20%"><h3>TempF</h3></div>
+      <div id="humidity" style="width: 20%"><h3>Humidity</h3></div>
+      <div id="wind" style="width: 20%"><h3>wind</h3></div>
+      <div id="press" style="width: 20%"><h3>Pressure</h3></div>
     </div>
-
     <form id="search">
       <input type="text" placeholder="City/Zipcode" id="input" required />
       <button type="submit">Search</button>
     </form>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  
     <script src="./DOM.js"></script>
-    
   </body>
 </html>
